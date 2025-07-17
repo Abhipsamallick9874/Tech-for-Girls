@@ -1,0 +1,88 @@
+body {
+  font-family: 'open Sans', sans-serif;
+  background-color:lightseagreen;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color:lightcyan;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeln ls;
+}
+
+@keyframes fadeln{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.section {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="number"], input[type="email"], input[type="file"] {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="file"]:focus {
+  border-color: #4CAF50;
+}
+
+button[type="button"], button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="button"]:hover, button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+#click-count {
+  font-size: 16px;
+  color: #666;
+}
+
+#success-message {
+  font-size: 24px;
+  color: #4CAF50;
+  text-align: center;
+  animation: slideln ls;
+}
+
+@keyframes slideln {
+    from{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
